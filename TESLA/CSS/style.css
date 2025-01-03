@@ -50,7 +50,7 @@ header > nav{
 /* height: 100% => 이미지 비율 페이지 전체로 맞춰줌 */
 header{
   height: 100%;
-  background-image: url(../images/wearerobot.jfif);
+  background-image: url(./images/wearerobot.jfif);
   background-size: cover;
   color: white;
   font-size: 20px;
@@ -113,15 +113,15 @@ main > div.three > div.three > a{
 }
 
 main > div.one{
-  background-image: url(../images/bluecar.jfif);
+  background-image: url(./images/bluecar.jfif);
 }
 
 main > div.two{
-  background-image: url(../images/twocar.jfif);
+  background-image: url(./images/twocar.jfif);
 }
 
 main > div.three{
-  background-image: url(../images/home.jpg);
+  background-image: url(./images/home.jpg);
 }
 
 main > div.four > video{
