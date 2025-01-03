@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./1224.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Average&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+  <p class="quote">
+  <span></span>
+  <span></span>
+  </p>
+  <div class="search-bar">
+    <input id="search" type="search" placeholder="검색.." autocomplete="off" />
+    <a href="http://www.google.com" target="_blank"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/search--v1.png" alt="아이콘"/></a>
+  </div>
+  <div class="weather">
+    <span id="place"></span>
+    <span id="temp">˚</span>
+    <!-- <span id="icon"></span> -->
+  </div>
+</header>
+<main>
+  <section class="info">
+    <p class="calendar">
+    </p>
+    <div class="clock">
+    </div>
+  </section>
+  <section class="login">
+    <div class="login-done">
+    <p class="hidden">Hello.</p>
+    <button class="logout hidden">Log out</button>
+    </div>
+    <div class="enter">
+    <form id="loginForm">
+      <input type="text" placeholder="이름을 입력하세요." required>
+      <button class="loginbtn">Log in</button>
+    </form>
+    </div>
+  </section>
+  <section class="to-do">
+    <form id="todoForm">
+      <input type="text" placeholder="오늘 할 일을 입력하세요." required>
+    </form>
+    <div class="lists">
+    <ul id="todoList"></ul>
+  </div>
+  </section>
+</main>
+<script src="./script/1224-login.js"></script>
+<script src="./script/1224-clock.js"></script>
+<script src="./script/1224-today.js"></script>
+<script src="./script/1224-todo.js"></script>
+<script src="./script/1224-backgroundimg.js"></script>
+<script src="./script/1224-quote.js"></script>
+<script src="./script/1224-search.js"></script>
+<script src="./script/1224-weathertt.js"></script>
+</body>
+</html>

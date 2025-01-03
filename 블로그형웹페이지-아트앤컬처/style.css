@@ -1,0 +1,394 @@
+@charset "utf-8";
+
+
+@font-face {
+  font-family: 'TTLaundryGothicB';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/TTLaundryGothicB.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root{
+  --color-font: #222;
+  --color-minimalfont: #666060;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-family: 'TTLaundryGothicB', sans-serif;
+  font-size: 2rem;
+  color: var(--color-font);
+}
+
+main{
+  width: 1440px;
+  margin: 0 auto;
+}
+
+main > section{
+  height: 100%
+}
+
+/*** 1페이지 ***/
+#one{
+  background: rgb(251,246,63);
+  background: radial-gradient(circle, rgba(251,246,63,1) 0%, rgba(252,70,144,1) 100%);;
+}
+
+/* #one > .wrap{
+  position: relative;
+} */
+#one > .top{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px;
+}
+#one > .top > nav{
+  width: 70%;
+}
+#one > .top > nav > ul{
+  display: flex;
+  gap: 20px;
+  line-height: 25px;
+}
+#one > .top > nav > ul > li.main-menu{
+  font-size: 2.1rem;
+  position: relative;
+}
+#one > .top > nav > ul > li.main-menu > a{
+  padding: 10px 0;
+}
+
+#one > .top > nav > ul > li.main-menu > a:hover{
+  background-color: #e02e9c;
+}
+#one > .top > nav > ul > li > .sub-menu{
+  width: 100%;
+  position: absolute;
+  font-size: 1.8rem;
+  line-height: 30px;
+  padding: 10px 10px;
+  display: none;
+  z-index: 3;
+}
+#one > .top > nav > ul > li > .sub-menu > a{
+  padding: 10px 0;
+}
+#one > .top > nav > ul > li > .sub-menu:hover{
+  background-color: #f3c33e;
+}
+#one > .top > .login{
+  font-size: 2.1rem;
+  margin-right: 50px;
+  text-align: center;
+}
+#one > .top > .login > a > i{
+  margin-left: 20px;
+}
+
+/**** 1페이지 mid ****/
+#one > .mid{
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+
+#one > .mid > img{
+  width: 1100px;
+  position: absolute;
+  top: 60px;
+  left: 13%;
+}
+
+#one > .mid > .star > img:nth-of-type(1){
+  position: absolute;
+  width: 300px;
+  bottom: 48%;
+  left: 28px;
+}
+
+#one > .mid > .star > img:nth-of-type(2){
+  position: absolute;
+  bottom: 18%;
+  left: 60px;
+}
+#one > .mid > .star > img:nth-of-type(3){
+  width: 200px;
+  position: absolute;
+  top: 43%;
+  right: 2px;
+  z-index: 2;
+}
+#one > .mid > .thin-logo{
+  position: absolute;
+  bottom: 70px;
+  left: 22px;
+  line-height: 30px;
+}
+#one > .mid > .thin-logo > p{
+  margin-top: 5px;
+}
+#one > .mid > .paint > img:nth-of-type(1){
+  width: 650px;
+  height: 650px;
+  position: absolute;
+  bottom: 60px;
+  left: 29%;
+}
+#one > .mid > .paint > img:nth-of-type(2){
+  height: 400px;
+  position: absolute;
+  bottom: 60px;
+  right: 25px;
+}
+/** 2페이지 **/
+#two{
+  background-color: #ef89e2;
+  border-top-left-radius: 15%;
+  border-top-right-radius: 15%;
+  padding-bottom: 40px;
+}
+
+#two > .title{
+  padding-left: 20px;
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#two > .title > .txt-book{
+  line-height: 25px;
+}
+
+#two > .title > .txt-book > p:nth-of-type(1){
+  font-size: 4rem;
+  line-height: 60px;
+  letter-spacing: 5px;
+}
+#two > .title > .txt-book > p:nth-of-type(2){
+  font-size: 1.5rem;
+  color: var(--color-minimalfont);
+}
+#two > .title > .y-star{
+  background-image: url(./image/2페이지-노란별.png);
+  width: 250px;
+  height: 250px;
+  background-repeat: no-repeat;
+  text-align: center;
+  line-height: 250px;
+  position: relative;
+}
+#two > .title > .y-star > a{
+  position: absolute;
+  bottom: 25px;
+  left: 60px;
+}
+
+#two > .item{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+#two > .item > p{
+  line-height: 40px;
+  margin-left: 40px;
+}
+#two > .item > .txt{
+  padding: 60px;
+  line-height: 40px;
+  width: 100%;
+  border-bottom: 1px solid #222;
+}
+#two > .item > a{
+  font-size: 4rem;
+  padding: 70px;
+}
+#two > .item > .txt > p:nth-of-type(1),
+#two > .item > .txt > p:nth-of-type(3){
+  font-size: 1.5rem;
+}
+#two > .item > .txt > p:nth-of-type(2){
+  font-size: 3rem;
+}
+
+/** 3페이지 **/
+#three{
+  background-color: #222;
+  height: 100vh;
+}
+#three > .wrap{
+  height: 97%;
+  background-color: #fcd41a;
+  width: 100%;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%;
+  margin-top: 3%;
+  display: flex;
+}
+#three > .back{
+  padding-top: 50px;
+}
+
+#three > .wrap > .txt{
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+#three > .wrap > .txt > .p-txt{
+  margin: 250px 30px;
+}
+#three > .wrap > .txt > .p-txt > p:nth-of-type(1){
+  font-size: 6rem;
+  padding: 20px;
+}
+#three > .wrap > .txt > .p-txt > p:nth-of-type(2){
+  padding: 20px;
+}
+#three > .wrap > .txt > .b-star > .star > a{
+  color: #eee;
+  font-size: 2.1rem;
+  position: relative;
+  bottom: -92px;
+  left: 42px;
+}
+#three > .wrap > .txt > .b-star > .star{
+  background-image: url(./image/3페이지-검정별.png);
+  width: 500px;
+  height: 200px;
+  background-repeat: no-repeat;
+  position: relative;
+  bottom: 80px;
+  left: 50px;
+}
+#three > .wrap > .p-slide{
+  display: flex;
+  gap: 60px;
+}
+#three > .wrap > .p-slide > img{
+  width: 400px;
+  height: 700px;
+  margin-top: 250px;
+  margin-bottom: 90px;
+  
+}
+#three > .wrap > .p-slide > img:nth-of-type(2){
+  margin-right: 60px;
+}
+
+/*** 4페이지 ***/
+#four > .top{
+  height: 100vh;
+  background-color: #eee;
+}
+#four > .top > .fortpolio{
+display: flex;
+align-items: center;
+text-align: center;
+padding: 60px;
+gap: 50px;
+}
+#four > .top > .fortpolio > a{
+  font-size: 7rem;
+  margin-top: 7px;
+}
+#four > .top > .fortpolio > span{
+  font-size: 6rem;
+}
+#four > .top > .pf-slide{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 250px auto;
+}
+
+#four > .top > .pf-slide > img{
+  width: 400px;
+  height: 450px;
+  text-align: center;
+}
+#four > .top > .pf-slide > a{
+  font-size: 5rem;
+}
+
+#four > .top > .foot{
+  width: 100%;
+  height: 40vh;
+  background-color: var(--color-font);
+  margin-top: 10%;
+  border-radius: 45% 45% 0 0;
+  display: flex;
+}
+
+#four > .top > .foot > .cs > .info > p,
+#four > .top > .foot > .cs > .qna > span,
+#four > .top > .foot > .sns > span,
+#four > .top > .foot > .sns > a,
+#four > .top > .foot > .sns > .icon > a,
+#four > .top > .foot > .sns > .copyright > span
+{
+  color: #eee;
+}
+#four > .top > .foot > .cs > .info > img{
+  color: #eee;
+}
+#four > .top > .foot > .cs{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 400px;
+  margin-top: 100px;
+  margin-left: 300px;
+  height: 300px;
+}
+#four > .top > .foot > .cs > .info{
+  font-size: 1.7rem;
+  line-height: 35px;
+}
+#four > .top > .foot > .cs > .qna > img{
+  position: relative;
+}
+#four > .top > .foot > .cs > .qna > span:nth-of-type(1){
+  position: absolute;
+  right: 870px;
+  bottom: -3300px;
+}
+#four > .top > .foot > .cs > .qna > span:nth-of-type(2){
+  position: absolute;
+  right: 870px;
+  bottom: -3350px;
+}
+#four > .top > .foot > .cs > .qna > span > a > i:nth-of-type(1){
+  padding-left: 10px;
+}
+#four > .top > .foot > .sns{
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  /* margin-top: 400px;
+  margin-right: 400px; */
+  font-size: 1.4rem;
+  gap: 300px;
+  position: relative;
+  bottom: -470px;
+  left: -1150px;
+
+}
+#four > .top > .foot > .sns > .icon{
+  width: 400px;
+}
+#four > .top > .foot > .sns > .icon > span{
+  color: #eee;
+  margin-right: 10px;
+}
+#four > .top > .foot > .sns > .icon > a{
+  letter-spacing: 10px;
+}
+#four > .top > .foot > .sns > .copyright{
+  width: 700px;
+  
+}
